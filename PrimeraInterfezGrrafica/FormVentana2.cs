@@ -38,5 +38,21 @@ namespace PrimeraInterfezGrrafica
             ventana.Show();
             
         }
+
+        private void trabajoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(Ventana3))
+                {
+                    MessageBox.Show("error, existe una ventana trabajo abierta");
+                    return;
+                }
+            }
+
+            Ventana3 ventana = new Ventana3();
+            ventana.MdiParent = this;
+            ventana.Show();
+        }
     }
 }

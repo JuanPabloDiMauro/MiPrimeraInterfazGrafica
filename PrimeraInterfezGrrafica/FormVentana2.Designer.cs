@@ -61,6 +61,7 @@
             this.trabajoToolStripMenuItem.Name = "trabajoToolStripMenuItem";
             this.trabajoToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.trabajoToolStripMenuItem.Text = "trabajo";
+            this.trabajoToolStripMenuItem.Click += new System.EventHandler(this.trabajoToolStripMenuItem_Click);
             // 
             // deportesToolStripMenuItem
             // 
@@ -83,7 +84,9 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormVentana2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormVentana2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
