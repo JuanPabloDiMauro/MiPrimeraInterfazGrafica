@@ -68,6 +68,7 @@
             this.deportesToolStripMenuItem.Name = "deportesToolStripMenuItem";
             this.deportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.deportesToolStripMenuItem.Text = "deportes";
+            this.deportesToolStripMenuItem.Click += new System.EventHandler(this.deportesToolStripMenuItem_Click);
             // 
             // hobbiesToolStripMenuItem
             // 

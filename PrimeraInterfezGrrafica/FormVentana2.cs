@@ -54,5 +54,21 @@ namespace PrimeraInterfezGrrafica
             ventana.MdiParent = this;
             ventana.Show();
         }
+
+        private void deportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach(var item in Application.OpenForms)
+            {
+                if(item.GetType() == typeof(Form3deportes))
+                {
+                    return;
+                }
+            }
+
+            Form3deportes form3Deportes = new Form3deportes();
+            form3Deportes.MdiParent = this;
+            form3Deportes.Show();
+
+        }
     }
 }
