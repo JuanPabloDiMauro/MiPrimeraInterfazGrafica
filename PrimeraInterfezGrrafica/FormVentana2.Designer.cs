@@ -31,7 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MsPerfil = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuParticipantes = new System.Windows.Forms.ToolStripMenuItem();
             this.hobbiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MsPerfil,
             this.trabajoToolStripMenuItem,
-            this.deportesToolStripMenuItem,
+            this.MenuParticipantes,
             this.hobbiesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -63,12 +63,12 @@
             this.trabajoToolStripMenuItem.Text = "trabajo";
             this.trabajoToolStripMenuItem.Click += new System.EventHandler(this.trabajoToolStripMenuItem_Click);
             // 
-            // deportesToolStripMenuItem
+            // MenuParticipantes
             // 
-            this.deportesToolStripMenuItem.Name = "deportesToolStripMenuItem";
-            this.deportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.deportesToolStripMenuItem.Text = "deportes";
-            this.deportesToolStripMenuItem.Click += new System.EventHandler(this.deportesToolStripMenuItem_Click);
+            this.MenuParticipantes.Name = "MenuParticipantes";
+            this.MenuParticipantes.Size = new System.Drawing.Size(87, 20);
+            this.MenuParticipantes.Text = "Participantes";
+            this.MenuParticipantes.Click += new System.EventHandler(this.deportesToolStripMenuItem_Click);
             // 
             // hobbiesToolStripMenuItem
             // 
@@ -101,7 +101,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MsPerfil;
         private System.Windows.Forms.ToolStripMenuItem trabajoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuParticipantes;
         private System.Windows.Forms.ToolStripMenuItem hobbiesToolStripMenuItem;
     }
 }
