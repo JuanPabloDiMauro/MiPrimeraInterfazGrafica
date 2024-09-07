@@ -10,8 +10,14 @@ namespace PrimeraInterfezGrrafica
     {
         public string nombre { get; set; }
 
-        public string apellido { get; set; }
+        public string descripcion { get; set; }
 
-        //public DateTime FechaNacimiento { get; set; }
+        public elemento tipo { get; set; }
+
+        public elemento debilidad { get; set; }
+
+        public string UrlImagen { get; set; }
+
+        
     }
 }

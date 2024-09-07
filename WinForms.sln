@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeraInterfezGrrafica", "PrimeraInterfezGrrafica\PrimeraInterfezGrrafica.csproj", "{5612D70E-10C9-4E80-B542-317023ACBA25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica de c#", "..\..\PROGRAMACION 3\Practica de c#\Practica de c#.csproj", "{C073707F-37E6-4D6A-B088-D4A4DF66D7DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5612D70E-10C9-4E80-B542-317023ACBA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5612D70E-10C9-4E80-B542-317023ACBA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5612D70E-10C9-4E80-B542-317023ACBA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C073707F-37E6-4D6A-B088-D4A4DF66D7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C073707F-37E6-4D6A-B088-D4A4DF66D7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C073707F-37E6-4D6A-B088-D4A4DF66D7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C073707F-37E6-4D6A-B088-D4A4DF66D7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

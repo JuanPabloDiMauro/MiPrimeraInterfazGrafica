@@ -20,9 +20,9 @@ namespace PrimeraInterfezGrrafica
 
             try
             {
-                conexion.ConnectionString = "server=DESKTOP-9O798KJ\\SQLEXPRESS02; database=TorneosDePesca; integrated security = true";
+                conexion.ConnectionString = "server=DESKTOP-9O798KJ\\SQLEXPRESS02; database=POKEDEX_DB; integrated security = true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select Nombre, Apellido from participantes ";
+                comando.CommandText = "select nombre, P.descripcion, UrlImagen, E.Descripcion tipo, D.Descripcion debilidad from POKEMONS P, ELEMENTOS E, ELEMENTOS D where E.Id = P.IdDebilidad and D.Id = P.IdDebilidad ";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -32,7 +32,13 @@ namespace PrimeraInterfezGrrafica
                 {
                     Participantes participantes = new Participantes();
                     participantes.nombre = (string)lector["nombre"];
-                    participantes.apellido = (string)lector["apellido"];
+                    participantes.descripcion = (string)lector["descripcion"];
+                    participantes.UrlImagen = (string)lector["UrlImagen"];
+                    participantes.tipo = new elemento();
+                    participantes.tipo.descripcion = (string)lector["descripcion"];
+                    participantes.debilidad = new elemento();
+                    participantes.debilidad.descripcion = (string)lector["debilidad"];
+
                     //participantes.FechaNacimiento = (DateTime)lector["Fecha de nacimiento"];
 
                     lista.Add(participantes);  
